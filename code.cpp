@@ -52,11 +52,7 @@ StatusCode Account::printTransactionHistory(const string& pass) {
          << m_account_number << ":" << endl;
 
     for (size_t i = m_transaction_history.size(); i > 0; i--) {
-        cout << m_transaction_history[i - 1];
-
-        if (i - 1 != 0) {
-            cout << "\t";
-        }
+        cout << m_transaction_history[i - 1] << "\t";
     }
 
     cout << endl;
